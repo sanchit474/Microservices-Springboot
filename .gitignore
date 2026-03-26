@@ -1,0 +1,14 @@
+# Target directories (build outputs)
+target/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Maven
+.m2/
