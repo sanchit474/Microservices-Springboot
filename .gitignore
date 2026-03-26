@@ -1,3 +1,9 @@
+# YAML configuration files - ignore all except examples
+*.yml
+*.yaml
+!application.example.yml
+!application.example.yaml
+
 # Target directories (build outputs)
 target/
 
