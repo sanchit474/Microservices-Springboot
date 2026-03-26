@@ -1,0 +1,19 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: RATING-SERVICE
+  data:
+    mongodb:
+      uri: mongodb+srv://sanchitbajpai11_db_user:Journal123Secure@cluster0.vuj7joi.mongodb.net/RatingMicroDB?authSource=admin&appName=Cluster0
+      auto-index-creation: true
+
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
