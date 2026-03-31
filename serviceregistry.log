@@ -1,0 +1,66 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-03-31T03:51:04.723+05:30  INFO 15512 --- [serviceregistry] [           main] c.s.m.s.ServiceRegistryApplication       : Starting ServiceRegistryApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 15512 (C:\Users\sanch\OneDrive\Desktop\minip\microservices\serviceregistry\target\serviceregistry-0.0.1-SNAPSHOT.jar started by sanch in C:\Users\sanch\OneDrive\Desktop\minip\microservices)
+2026-03-31T03:51:04.729+05:30  INFO 15512 --- [serviceregistry] [           main] c.s.m.s.ServiceRegistryApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-03-31T03:51:06.049+05:30  INFO 15512 --- [serviceregistry] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3495b99d-80b2-37b8-8879-e8847f0f2655
+2026-03-31T03:51:06.363+05:30  INFO 15512 --- [serviceregistry] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8761 (http)
+2026-03-31T03:51:06.385+05:30  INFO 15512 --- [serviceregistry] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-31T03:51:06.386+05:30  INFO 15512 --- [serviceregistry] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-31T03:51:06.416+05:30  INFO 15512 --- [serviceregistry] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1598 ms
+2026-03-31T03:51:07.566+05:30  INFO 15512 --- [serviceregistry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2026-03-31T03:51:07.566+05:30  INFO 15512 --- [serviceregistry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2026-03-31T03:51:07.788+05:30  INFO 15512 --- [serviceregistry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2026-03-31T03:51:07.789+05:30  INFO 15512 --- [serviceregistry] [           main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2026-03-31T03:51:07.974+05:30  INFO 15512 --- [serviceregistry] [           main] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-03-31T03:51:08.899+05:30  WARN 15512 --- [serviceregistry] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-31T03:51:08.937+05:30  INFO 15512 --- [serviceregistry] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-03-31T03:51:08.974+05:30  INFO 15512 --- [serviceregistry] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-03-31T03:51:08.974+05:30  INFO 15512 --- [serviceregistry] [           main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2026-03-31T03:51:08.976+05:30  INFO 15512 --- [serviceregistry] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1774909268976 with initial instances count: 0
+2026-03-31T03:51:09.043+05:30  INFO 15512 --- [serviceregistry] [           main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2026-03-31T03:51:09.046+05:30  WARN 15512 --- [serviceregistry] [           main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2026-03-31T03:51:09.063+05:30  INFO 15512 --- [serviceregistry] [           main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2026-03-31T03:51:09.063+05:30  INFO 15512 --- [serviceregistry] [           main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2026-03-31T03:51:09.082+05:30  INFO 15512 --- [serviceregistry] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2026-03-31T03:51:09.142+05:30  INFO 15512 --- [serviceregistry] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICEREGISTRY with eureka with status UP
+2026-03-31T03:51:09.157+05:30  INFO 15512 --- [serviceregistry] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2026-03-31T03:51:09.158+05:30  INFO 15512 --- [serviceregistry] [       Thread-9] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2026-03-31T03:51:09.159+05:30  INFO 15512 --- [serviceregistry] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2026-03-31T03:51:09.159+05:30  INFO 15512 --- [serviceregistry] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2026-03-31T03:51:09.159+05:30  INFO 15512 --- [serviceregistry] [       Thread-9] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2026-03-31T03:51:09.162+05:30  INFO 15512 --- [serviceregistry] [       Thread-9] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2026-03-31T03:51:09.181+05:30  INFO 15512 --- [serviceregistry] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8761 (http) with context path '/'
+2026-03-31T03:51:09.182+05:30  INFO 15512 --- [serviceregistry] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8761
+2026-03-31T03:51:09.203+05:30  INFO 15512 --- [serviceregistry] [           main] c.s.m.s.ServiceRegistryApplication       : Started ServiceRegistryApplication in 5.013 seconds (process running for 5.644)
+2026-03-31T03:52:09.166+05:30  INFO 15512 --- [serviceregistry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 0ms
+2026-03-31T03:52:09.767+05:30  INFO 15512 --- [serviceregistry] [nio-8761-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31T03:52:09.767+05:30  INFO 15512 --- [serviceregistry] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-31T03:52:09.767+05:30  INFO 15512 --- [serviceregistry] [nio-8761-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2026-03-31T03:52:10.197+05:30  INFO 15512 --- [serviceregistry] [nio-8761-exec-2] c.n.e.registry.AbstractInstanceRegistry  : Registered instance USER-SERVICE/192.168.56.1:USER-SERVICE:8081 with status UP (replication=false)
+2026-03-31T03:52:35.165+05:30  INFO 15512 --- [serviceregistry] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance HOTEL-SERVICE/192.168.56.1:HOTEL-SERVICE:8082 with status UP (replication=false)
+2026-03-31T03:53:09.176+05:30  INFO 15512 --- [serviceregistry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 12ms
+2026-03-31T03:53:10.019+05:30  INFO 15512 --- [serviceregistry] [io-8761-exec-10] c.n.e.registry.AbstractInstanceRegistry  : Registered instance RATING-SERVICE/192.168.56.1:RATING-SERVICE:8083 with status UP (replication=false)
+2026-03-31T03:53:28.503+05:30  INFO 15512 --- [serviceregistry] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/API-GATEWAY:2a0102cef4718824f5d01c06e545b9a7 with status UP (replication=false)
+2026-03-31T03:54:09.181+05:30  INFO 15512 --- [serviceregistry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 7ms
+2026-03-31T03:55:09.181+05:30  INFO 15512 --- [serviceregistry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 1ms
+2026-03-31T03:55:35.047+05:30  INFO 15512 --- [serviceregistry] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.56.1:API-GATEWAY:8084 with status UP (replication=false)
+2026-03-31T03:56:09.189+05:30  INFO 15512 --- [serviceregistry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 10ms
+2026-03-31T03:57:09.199+05:30  INFO 15512 --- [serviceregistry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 13ms
+2026-03-31T03:58:09.208+05:30  INFO 15512 --- [serviceregistry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 11ms
+2026-03-31T03:58:20.347+05:30  INFO 15512 --- [serviceregistry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.56.1:API-GATEWAY:8084 with status UP (replication=false)
+2026-03-31T03:59:01.851+05:30  INFO 15512 --- [serviceregistry] [nio-8761-exec-6] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.56.1:API-GATEWAY:8084 with status UP (replication=false)
+2026-03-31T03:59:04.069+05:30  INFO 15512 --- [serviceregistry] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.56.1:API-GATEWAY:8084 with status DOWN (replication=false)
+2026-03-31T03:59:04.075+05:30  INFO 15512 --- [serviceregistry] [nio-8761-exec-4] c.n.e.registry.AbstractInstanceRegistry  : Cancelled instance API-GATEWAY/192.168.56.1:API-GATEWAY:8084 (replication=false)
+2026-03-31T03:59:09.213+05:30  INFO 15512 --- [serviceregistry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms
+2026-03-31T03:59:20.338+05:30  WARN 15512 --- [serviceregistry] [nio-8761-exec-7] c.n.e.registry.AbstractInstanceRegistry  : DS: Registry: lease doesn't exist, registering resource: API-GATEWAY - 192.168.56.1:API-GATEWAY:8084
+2026-03-31T03:59:20.340+05:30  WARN 15512 --- [serviceregistry] [nio-8761-exec-7] c.n.eureka.resources.InstanceResource    : Not Found (Renew): API-GATEWAY - 192.168.56.1:API-GATEWAY:8084
+2026-03-31T03:59:20.441+05:30  INFO 15512 --- [serviceregistry] [nio-8761-exec-8] c.n.e.registry.AbstractInstanceRegistry  : Registered instance API-GATEWAY/192.168.56.1:API-GATEWAY:8084 with status UP (replication=false)
+2026-03-31T04:00:09.217+05:30  INFO 15512 --- [serviceregistry] [a-EvictionTimer] c.n.e.registry.AbstractInstanceRegistry  : Running the evict task with compensationTime 6ms

@@ -1,0 +1,79 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.0.3)
+
+2026-03-31T03:52:03.977+05:30  INFO 24124 --- [USER-SERVICE] [           main] c.s.m.user.UserMicroservicesApplication  : Starting UserMicroservicesApplication v0.0.1-SNAPSHOT using Java 21.0.7 with PID 24124 (C:\Users\sanch\OneDrive\Desktop\minip\microservices\user\target\microservices-0.0.1-SNAPSHOT.jar started by sanch in C:\Users\sanch\OneDrive\Desktop\minip\microservices)
+2026-03-31T03:52:03.984+05:30  INFO 24124 --- [USER-SERVICE] [           main] c.s.m.user.UserMicroservicesApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-03-31T03:52:04.935+05:30  INFO 24124 --- [USER-SERVICE] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-31T03:52:05.065+05:30  INFO 24124 --- [USER-SERVICE] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 1 JPA repository interface.
+2026-03-31T03:52:05.326+05:30  INFO 24124 --- [USER-SERVICE] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=367d1322-a597-30a4-bc0c-8d5e180b77e0
+2026-03-31T03:52:05.810+05:30  INFO 24124 --- [USER-SERVICE] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8081 (http)
+2026-03-31T03:52:05.824+05:30  INFO 24124 --- [USER-SERVICE] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-31T03:52:05.824+05:30  INFO 24124 --- [USER-SERVICE] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-31T03:52:05.885+05:30  INFO 24124 --- [USER-SERVICE] [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1795 ms
+2026-03-31T03:52:06.134+05:30  INFO 24124 --- [USER-SERVICE] [           main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-03-31T03:52:06.226+05:30  INFO 24124 --- [USER-SERVICE] [           main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.4.Final
+2026-03-31T03:52:06.859+05:30  INFO 24124 --- [USER-SERVICE] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-31T03:52:06.893+05:30  INFO 24124 --- [USER-SERVICE] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-31T03:52:07.234+05:30  INFO 24124 --- [USER-SERVICE] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75da2db
+2026-03-31T03:52:07.239+05:30  INFO 24124 --- [USER-SERVICE] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-31T03:52:07.332+05:30  INFO 24124 --- [USER-SERVICE] [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/microservices]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 9.1
+	Default catalog/schema: microservices/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-03-31T03:52:08.196+05:30  INFO 24124 --- [USER-SERVICE] [           main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-31T03:52:08.273+05:30  INFO 24124 --- [USER-SERVICE] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-31T03:52:08.366+05:30  INFO 24124 --- [USER-SERVICE] [           main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-03-31T03:52:08.616+05:30  WARN 24124 --- [USER-SERVICE] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-31T03:52:08.799+05:30  INFO 24124 --- [USER-SERVICE] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'HOTEL-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-03-31T03:52:08.871+05:30  INFO 24124 --- [USER-SERVICE] [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'RATING-SERVICE' URL not provided. Will try picking an instance via load-balancing.
+2026-03-31T03:52:09.395+05:30  INFO 24124 --- [USER-SERVICE] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestClient.
+2026-03-31T03:52:09.435+05:30  WARN 24124 --- [USER-SERVICE] [           main] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2026-03-31T03:52:09.470+05:30  INFO 24124 --- [USER-SERVICE] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2026-03-31T03:52:09.502+05:30  INFO 24124 --- [USER-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2026-03-31T03:52:09.508+05:30  INFO 24124 --- [USER-SERVICE] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2026-03-31T03:52:09.524+05:30  INFO 24124 --- [USER-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-03-31T03:52:09.524+05:30  INFO 24124 --- [USER-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-03-31T03:52:09.524+05:30  INFO 24124 --- [USER-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-03-31T03:52:09.524+05:30  INFO 24124 --- [USER-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-03-31T03:52:09.524+05:30  INFO 24124 --- [USER-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-03-31T03:52:09.524+05:30  INFO 24124 --- [USER-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2026-03-31T03:52:09.525+05:30  INFO 24124 --- [USER-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-03-31T03:52:10.011+05:30  INFO 24124 --- [USER-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-03-31T03:52:10.011+05:30  INFO 24124 --- [USER-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2026-03-31T03:52:10.011+05:30  INFO 24124 --- [USER-SERVICE] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2026-03-31T03:52:10.018+05:30  INFO 24124 --- [USER-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1774909330018 with initial instances count: 0
+2026-03-31T03:52:10.022+05:30  INFO 24124 --- [USER-SERVICE] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USER-SERVICE with eureka with status UP
+2026-03-31T03:52:10.023+05:30  INFO 24124 --- [USER-SERVICE] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1774909330023, current=UP, previous=STARTING]
+2026-03-31T03:52:10.027+05:30  INFO 24124 --- [USER-SERVICE] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/192.168.56.1:USER-SERVICE:8081: registering service...
+2026-03-31T03:52:10.050+05:30  INFO 24124 --- [USER-SERVICE] [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8081 (http) with context path '/'
+2026-03-31T03:52:10.051+05:30  INFO 24124 --- [USER-SERVICE] [           main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2026-03-31T03:52:10.082+05:30  INFO 24124 --- [USER-SERVICE] [           main] c.s.m.user.UserMicroservicesApplication  : Started UserMicroservicesApplication in 6.724 seconds (process running for 7.407)
+2026-03-31T03:52:10.201+05:30  INFO 24124 --- [USER-SERVICE] [foReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-SERVICE/192.168.56.1:USER-SERVICE:8081 - registration status: 204
+2026-03-31T03:52:40.018+05:30  INFO 24124 --- [USER-SERVICE] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2026-03-31T03:52:40.018+05:30  INFO 24124 --- [USER-SERVICE] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2026-03-31T03:52:40.018+05:30  INFO 24124 --- [USER-SERVICE] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2026-03-31T03:52:40.018+05:30  INFO 24124 --- [USER-SERVICE] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2026-03-31T03:52:40.018+05:30  INFO 24124 --- [USER-SERVICE] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2026-03-31T03:52:40.018+05:30  INFO 24124 --- [USER-SERVICE] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Application version is -1: false
+2026-03-31T03:52:40.018+05:30  INFO 24124 --- [USER-SERVICE] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2026-03-31T03:52:40.051+05:30  INFO 24124 --- [USER-SERVICE] [reshExecutor-%d] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2026-03-31T03:54:30.686+05:30  INFO 24124 --- [USER-SERVICE] [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-31T03:54:30.686+05:30  INFO 24124 --- [USER-SERVICE] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-31T03:54:30.689+05:30  INFO 24124 --- [USER-SERVICE] [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: select u1_0.id,u1_0.about,u1_0.email,u1_0.name from users u1_0
+2026-03-31T03:57:09.520+05:30  INFO 24124 --- [USER-SERVICE] [rap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

@@ -4,6 +4,9 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+.yml
+# But keep example config
+!src/main/resources/*.example.yml
 ### STS ###
 .apt_generated
 .classpath

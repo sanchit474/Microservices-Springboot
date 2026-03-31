@@ -3,8 +3,8 @@ target/
 .mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+.yaml
 .yml
-
 # But keep example config
 !src/main/resources/*.example.yml
 ### STS ###
